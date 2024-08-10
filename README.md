@@ -1,5 +1,9 @@
-A URL shortener built using Flask and flask-sqlalchemy. Simply, you just input your original URL, then it gets added to the database and a new shorter url is generated. Those two URLs get mapped, so when you go to localhost:5000/<short_url>, you get redirected to the orignal url.
 
-Added a new feature where in the WEBHOOK_URL you can add your own Discord webhook url and you get notified when a new link is created, which then helps you analyze your user's internet traffic.
+# Project Title
+A simple Flask Python URL shortener, for people who dont want to bother with URLs that are thousands of characters long.
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=saamirkhrl&label=Total%20views&color=0e75b6&style=flat" alt="saamirkhrl" /> </p>
+
+
+## 🚀 About Me
+Hey! My name is Samir and I am a web developer mainly on the backend programming small projects which I hope one day will land me an internship. Idk, I like to code. My profile is way more detailed, so check that out.
+
