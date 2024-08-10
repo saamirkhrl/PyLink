@@ -1,4 +1,4 @@
-# PyLink v1.0.0 (This is final)
+# PyLink v1.0.0
 A simple Flask Python URL shortener, for people who dont want to bother with URLs that are thousands of characters long.
 
 
