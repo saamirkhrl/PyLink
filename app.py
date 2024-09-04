@@ -13,7 +13,7 @@ app.config['SECRET_KEY'] = os.urandom(1000)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-WEBHOOK_URL = "you_will_have_to_make_your_own_webhook_for_this_feature_to_work"
+WEBHOOK_URL = "https://discord.com/api/webhooks/1281006651297763422/GZ1IsxqBWKzk9lhi8g1V-u5n-gHakB-SNbmFCEwtp2Z3WggcJkoPai9KN4Iz_So7f_6G"
 
 db = SQLAlchemy(app)
 
