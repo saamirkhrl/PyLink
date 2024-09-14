@@ -9,7 +9,7 @@ from urllib.parse import urlparse
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.urandom(1000)
+app.config['SECRET_KEY'] = os.urandom(10)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
