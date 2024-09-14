@@ -13,8 +13,6 @@ app.config['SECRET_KEY'] = os.urandom(10)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1281006651297763422/GZ1IsxqBWKzk9lhi8g1V-u5n-gHakB-SNbmFCEwtp2Z3WggcJkoPai9KN4Iz_So7f_6G"
-
 db = SQLAlchemy(app)
 
 class Link(db.Model):
@@ -36,19 +34,6 @@ def normalize_url(url):
     elif parsed_url.scheme not in ['http', 'https']:
         return 'https://' + parsed_url.path
     return url
-
-def send_webhook_message(id, original_url, short_url):
-    data = {
-        "embeds": [{
-            "title": "New URL Created",
-            "fields": [
-                {"name": "ID", "value": str(id)},
-                {"name": "Original URL", "value": original_url},
-                {"name": "Short URL", "value": short_url}
-            ]
-        }]
-    }
-    requests.post(WEBHOOK_URL, json=data)
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
